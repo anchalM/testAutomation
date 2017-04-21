@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TradeData">
+	<parameter name="appURL" value="http://demo.guru99.com/v4" />
+	<parameter name="browserType" value="firefox" />
+	<test name="Test">
+		<classes>
+			<!-- <class name="w2c.marketData.Tests.LoginTest" /> -->
+		<!-- <class name="w2c.marketData.Tests.CustomerTest" /> -->
+		 <class name="w2c.marketData.Tests.AccountsTest" />
+		
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- RegressionSuite -->
+

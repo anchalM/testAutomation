@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TradeData]">
+  <parameter name="appURL" value="http://demo.guru99.com/v4"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="w2c.marketData.Tests.AccountsTest">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="newCustomerTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- w2c.marketData.Tests.AccountsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TradeData] -->
