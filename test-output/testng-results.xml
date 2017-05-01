@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Creating firefox driver ]]>
@@ -8,15 +8,15 @@
       <![CDATA[newcustomerTest]]>
     </line>
     <line>
-      <![CDATA[waiting for Page to Load..]]>
+      <![CDATA[NewAccount]]>
     </line>
   </reporter-output>
-  <suite name="TradeData" duration-ms="13034" started-at="2017-04-20T14:38:14Z" finished-at="2017-04-20T14:38:27Z">
+  <suite name="TradeData" duration-ms="39422" started-at="2017-05-01T15:54:00Z" finished-at="2017-05-01T15:54:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13034" started-at="2017-04-20T14:38:14Z" finished-at="2017-04-20T14:38:27Z">
+    <test name="Test" duration-ms="39422" started-at="2017-05-01T15:54:00Z" finished-at="2017-05-01T15:54:40Z">
       <class name="w2c.marketData.Tests.AccountsTest">
-        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:w2c.marketData.Tests.AccountsTest@685cb137]" name="initializeTestBaseSetup" is-config="true" duration-ms="11462" started-at="2017-04-20T20:08:14Z" finished-at="2017-04-20T20:08:26Z">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:w2c.marketData.Tests.AccountsTest@42d80b78]" name="initializeTestBaseSetup" is-config="true" duration-ms="9134" started-at="2017-05-01T21:24:01Z" finished-at="2017-05-01T21:24:10Z">
           <params>
             <param index="0">
               <value>
@@ -35,18 +35,44 @@
             </line>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method status="FAIL" signature="newCustomerTest()[pri:1, instance:w2c.marketData.Tests.AccountsTest@685cb137]" name="newCustomerTest" duration-ms="1548" started-at="2017-04-20T20:08:26Z" finished-at="2017-04-20T20:08:27Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="newCustomerTest()[pri:1, instance:w2c.marketData.Tests.AccountsTest@42d80b78]" name="newCustomerTest" duration-ms="29282" started-at="2017-05-01T21:24:10Z" finished-at="2017-05-01T21:24:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[newcustomerTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- newCustomerTest -->
+        <test-method status="FAIL" signature="newAccountTest()[pri:2, instance:w2c.marketData.Tests.AccountsTest@42d80b78]" name="newAccountTest" duration-ms="959" started-at="2017-05-01T21:24:39Z" finished-at="2017-05-01T21:24:40Z">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[No tab modal was open when attempting to get the dialog text
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Ami', ip: '192.168.2.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: f6256fe7-1cd5-4392-892f-ed604a5559a3]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
-	at w2c.marketData.Common.DriverSetup.explicitWait(DriverSetup.java:67)
-	at w2c.marketData.Tests.AccountsTest.newCustomerTest(AccountsTest.java:32)
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: No tab modal was open when attempting to get the dialog text
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Ami', ip: '192.168.2.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: f6256fe7-1cd5-4392-892f-ed604a5559a3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:977)
+	at w2c.marketData.Common.Alert_Screenshot.captureAlertText(Alert_Screenshot.java:20)
+	at w2c.marketData.Tests.AccountsTest.newAccountTest(AccountsTest.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,20 +99,13 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
             <line>
-              <![CDATA[newcustomerTest]]>
-            </line>
-            <line>
-              <![CDATA[waiting for Page to Load..]]>
+              <![CDATA[NewAccount]]>
             </line>
           </reporter-output>
-        </test-method> <!-- newCustomerTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:w2c.marketData.Tests.AccountsTest@685cb137]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-04-20T20:08:27Z" finished-at="2017-04-20T20:08:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- newAccountTest -->
       </class> <!-- w2c.marketData.Tests.AccountsTest -->
     </test> <!-- Test -->
   </suite> <!-- TradeData -->

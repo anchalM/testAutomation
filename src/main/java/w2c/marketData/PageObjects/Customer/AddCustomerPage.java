@@ -3,8 +3,9 @@ package w2c.marketData.PageObjects.Customer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AddCustomerPage {
-	WebDriver driver;
+import w2c.marketData.Common.BasePageObject;
+
+public class AddCustomerPage extends BasePageObject {
 	By CustomerName = By.name("name");
 	By Gender = By.xpath("//input[@value='f']");
 	By DOB = By.name("dob");
@@ -24,7 +25,7 @@ public class AddCustomerPage {
 
 	// set customer name in text box
 	public void setCustomername(String customername) {
-		driver.findElement(CustomerName).sendKeys(customername);
+		assignValueWhenReady(CustomerName, customername, 5000);
 	}
 
 	public void setGender() {
@@ -58,18 +59,18 @@ public class AddCustomerPage {
 	public void setEmail(String email) {
 		driver.findElement(Email).sendKeys(email);
 	}
-	
+
 	public void setPassword(String password) {
 		driver.findElement(Password).sendKeys(password);
 	}
 
 	public RegisterdCustomerDetailPage ClickSubmit() {
-		driver.findElement(Submit).click();
+		clickWhenReady(Submit, 3000);
+		// driver.findElement(Submit).click();
 		RegisterdCustomerDetailPage regPage = new RegisterdCustomerDetailPage(driver);
 		return regPage;
 	}
-	/*public void ClickContinue(){
-		driver.findElement(Continue).click();
-	}*/
-		}
-
+	/*
+	 * public void ClickContinue(){ driver.findElement(Continue).click(); }
+	 */
+}

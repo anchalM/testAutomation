@@ -1,6 +1,6 @@
 package w2c.marketData.Tests;
 
-/*import org.testng.Reporter;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import w2c.marketData.Common.Alert_Screenshot;
@@ -19,14 +19,14 @@ public class EditCustomerTest extends DriverSetup {
 		HomePageObject home= loginPage.Login();
 		Alert_Screenshot alt_screenshot = new Alert_Screenshot(getDriver());
 		//HomePageObject home= new HomePageObject(getDriver());
-		implicitWait(3000);
+		//implicitWait(3000);
 		home.setEditCustomer();
 		EditCustomerPage editPage = new EditCustomerPage(getDriver());
-		implicitWait(3000);
+		//implicitWait(3000);
 		editPage.setCustomerid("98610");
 		editPage.setSubmit();
 		//alt_screenshot.captureAlertText();
 		alt_screenshot.takeScreenShot("editScreenshot");
 		
 	}
-}*/
+}

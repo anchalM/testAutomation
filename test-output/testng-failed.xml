@@ -8,8 +8,7 @@
       <class name="w2c.marketData.Tests.AccountsTest">
         <methods>
           <include name="initializeTestBaseSetup"/>
-          <include name="newCustomerTest"/>
-          <include name="tearDown"/>
+          <include name="newAccountTest"/>
         </methods>
       </class> <!-- w2c.marketData.Tests.AccountsTest -->
     </classes>

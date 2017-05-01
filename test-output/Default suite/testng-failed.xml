@@ -5,12 +5,7 @@
     <classes>
       <class name="w2c.marketData.Tests.AccountsTest">
         <methods>
-          <include name="deposit"/>
           <include name="newCustomerTest"/>
-          <include name="widthdrawl"/>
-          <include name="deleteAccoutn"/>
-          <include name="editAccount"/>
-          <include name="newAccountTest"/>
         </methods>
       </class> <!-- w2c.marketData.Tests.AccountsTest -->
     </classes>
