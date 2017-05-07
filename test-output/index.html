@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-TradeData">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="newAccountTest">newAccountTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="deleteAccoutn">deleteAccoutn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TradeData -->
@@ -115,7 +115,27 @@
                     <div class="method-list-content passed suite-TradeData">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="deposit">deposit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="editAccount">editAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="newAccountTest">newAccountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="newCustomerTest">newCustomerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TradeData" title="w2c.marketData.Tests.AccountsTest" hash-for-method="widthdrawl">widthdrawl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TradeData -->
@@ -138,15 +158,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="newAccountTest">
-                  </a> <!-- newAccountTest -->
-                  <span class="method-name">newAccountTest</span>
+                  <a name="deleteAccoutn">
+                  </a> <!-- deleteAccoutn -->
+                  <span class="method-name">deleteAccoutn</span>
                   <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: No tab modal was open when attempting to get the dialog text
 Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
 System info: host: &apos;Ami&apos;, ip: &apos;192.168.2.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161031133903, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
-Session ID: f6256fe7-1cd5-4392-892f-ed604a5559a3
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20161031133903, version=47.0.2, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 631eebf6-ab64-43f5-aff4-46d0a6c60803
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
@@ -156,7 +176,7 @@ Session ID: f6256fe7-1cd5-4392-892f-ed604a5559a3
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:977)
 	at w2c.marketData.Common.Alert_Screenshot.captureAlertText(Alert_Screenshot.java:20)
-	at w2c.marketData.Tests.AccountsTest.newAccountTest(AccountsTest.java:74)
+	at w2c.marketData.Tests.AccountsTest.deleteAccoutn(AccountsTest.java:94)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -171,9 +191,37 @@ Session ID: f6256fe7-1cd5-4392-892f-ed604a5559a3
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="deposit">
+                  </a> <!-- deposit -->
+                  <span class="method-name">deposit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editAccount">
+                  </a> <!-- editAccount -->
+                  <span class="method-name">editAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAccountTest">
+                  </a> <!-- newAccountTest -->
+                  <span class="method-name">newAccountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="newCustomerTest">
                   </a> <!-- newCustomerTest -->
                   <span class="method-name">newCustomerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="widthdrawl">
+                  </a> <!-- widthdrawl -->
+                  <span class="method-name">widthdrawl</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,20 +280,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'newCustomerTest')
+data.setCell(0, 1, 'deposit')
 data.setCell(0, 2, 'w2c.marketData.Tests.AccountsTest')
-data.setCell(0, 3, 29282);
+data.setCell(0, 3, 31446);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'newAccountTest')
+data.setCell(1, 1, 'newCustomerTest')
 data.setCell(1, 2, 'w2c.marketData.Tests.AccountsTest')
-data.setCell(1, 3, 959);
+data.setCell(1, 3, 6494);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'newAccountTest')
+data.setCell(2, 2, 'w2c.marketData.Tests.AccountsTest')
+data.setCell(2, 3, 2127);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'widthdrawl')
+data.setCell(3, 2, 'w2c.marketData.Tests.AccountsTest')
+data.setCell(3, 3, 2067);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'editAccount')
+data.setCell(4, 2, 'w2c.marketData.Tests.AccountsTest')
+data.setCell(4, 3, 1876);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deleteAccoutn')
+data.setCell(5, 2, 'w2c.marketData.Tests.AccountsTest')
+data.setCell(5, 3, 166);
 window.suiteTableData['TradeData']= { tableData: data, tableDiv: 'times-div-TradeData'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-TradeData">
               </div> <!-- times-div-TradeData -->
             </div> <!-- times-div -->
@@ -266,6 +330,30 @@ return data;
               <span class="reporter-method-name">newAccountTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">NewAccount</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">widthdrawl</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Widthdraw</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deposit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Deposit</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">editAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">EditAccount</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deleteAccoutn</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">DeleteAccount</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,13 +378,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">newCustomerTest</span>
-                <span class="method-start">9143 ms</span>
+                <span class="method-start">10350 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newAccountTest</span>
+                <span class="method-start">16846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editAccount</span>
+                <span class="method-start">18975 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">newAccountTest</span>
-                <span class="method-start">38428 ms</span>
+                <span class="method-name">deleteAccoutn</span>
+                <span class="method-start">20853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deposit</span>
+                <span class="method-start">21030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">widthdrawl</span>
+                <span class="method-start">52478 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

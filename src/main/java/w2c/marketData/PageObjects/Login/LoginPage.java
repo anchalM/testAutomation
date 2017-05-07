@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class LoginPage {
-	WebDriver driver;
+import w2c.marketData.Common.BasePageObject;
+
+public class LoginPage  extends BasePageObject{
+	//WebDriver driver;
 	
 	By UserID = By.name("uid");
 	By Password = By.name("password");
@@ -17,7 +19,7 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	public HomePageObject Login(){
+	public HomePageObject Login() {
 		driver.manage().window().maximize();
 		setUserName("mngr75232");
 		setPassword("etepaty");
@@ -33,13 +35,13 @@ public class LoginPage {
 		return getLoginPageTitle().contains(expectedTitle);
 	}
 	public void setUserName(String userName) {
-			driver.findElement(UserID).sendKeys(userName);
+			assignValueWhenReady(UserID, userName, 3000);
 	}
 	public void setPassword(String password) {
-		driver.findElement(Password).sendKeys(password);
+		assignValueWhenReady(Password, password, 3000);
 	}
 	public void ClockOnSubmit() {
-		driver.findElement(Login).click();
+		clickWhenReady(Login, 3000);
 	}
 	public boolean LoginVerify() {
 		Assert.assertTrue(driver.findElement(By.linkText("Manger Id")).isDisplayed());

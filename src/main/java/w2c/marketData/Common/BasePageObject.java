@@ -39,17 +39,18 @@ public class BasePageObject {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 		element.click();
-
 	}
 
+	// Apply on Label
 	public void assignValueWhenReady(By locator, String value, int timeout) {
 		WebElement element = null;
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		element.sendKeys(value);
 	}
-	
-	public String getValueWhenReady(By locator, int timeout){
+
+	// Apply when Get the value
+	public String getValueWhenReady(By locator, int timeout) {
 		WebElement element = null;
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -72,7 +73,6 @@ public class BasePageObject {
 			System.out.println(
 					"Timeout waiting for Page Load Request to complete after " + timeOutInSeconds + " seconds");
 			Assert.assertFalse(true, "Timeout waiting for Page Load Request to complete.");
-
 		}
 	}
 }

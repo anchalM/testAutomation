@@ -33,44 +33,41 @@ public class AddCustomerPage extends BasePageObject {
 	}
 
 	public void setDOB(String dob) {
-		driver.findElement(DOB).sendKeys(dob);
+		assignValueWhenReady(DOB, dob, 3000);
 	}
 
 	public void setAddress(String Add) {
-		driver.findElement(Address).sendKeys(Add);
+		assignValueWhenReady(Address, Add, 3000);
 	}
 
 	public void setCity(String city) {
-		driver.findElement(City).sendKeys(city);
+		assignValueWhenReady(City, city, 3000);
 	}
 
 	public void setState(String state) {
-		driver.findElement(State).sendKeys(state);
+		assignValueWhenReady(State, state, 3000);
 	}
 
 	public void setPin(String pin) {
-		driver.findElement(PIN).sendKeys(pin);
+		assignValueWhenReady(PIN, pin, 3000);
 	}
 
 	public void setMobileNumber(String mnumber) {
-		driver.findElement(MobileNumber).sendKeys(mnumber);
+		assignValueWhenReady(MobileNumber, mnumber, 3000);
 	}
 
 	public void setEmail(String email) {
-		driver.findElement(Email).sendKeys(email);
+		assignValueWhenReady(Email, email, 2000);
 	}
 
 	public void setPassword(String password) {
-		driver.findElement(Password).sendKeys(password);
+		assignValueWhenReady(Password, password, 3000);
 	}
 
 	public RegisterdCustomerDetailPage ClickSubmit() {
 		clickWhenReady(Submit, 3000);
-		// driver.findElement(Submit).click();
 		RegisterdCustomerDetailPage regPage = new RegisterdCustomerDetailPage(driver);
 		return regPage;
 	}
-	/*
-	 * public void ClickContinue(){ driver.findElement(Continue).click(); }
-	 */
+
 }

@@ -1,5 +1,5 @@
 pom\Practice\SeleniumPageObject.class
-w2c\marketData\Tests\CustomerTest.class
+w2c\marketData\Common\BasePageObject$1.class
 w2c\marketData\Tests\AccountsTest.class
 w2c\marketData\Common\Utils.class
 w2c\marketData\Tests\LoginTest.class
@@ -10,6 +10,8 @@ w2c\marketData\Common\DriverSetup.class
 w2c\marketData\PageObjects\Account\EditAccountPage.class
 w2c\marketData\PageObjects\Login\HomePageObject.class
 w2c\marketData\PageObjects\Customer\AddCustomerPage.class
+w2c\marketData\Tests\EditCustomerTest.class
+w2c\marketData\Common\BasePageObject.class
 w2c\marketData\PageObjects\Account\NewAccountPage.class
 w2c\marketData\Common\Alert_Screenshot.class
 w2c\marketData\PageObjects\Account\DepositPage.class

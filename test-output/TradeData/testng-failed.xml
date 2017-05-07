@@ -8,7 +8,7 @@
       <class name="w2c.marketData.Tests.AccountsTest">
         <methods>
           <include name="initializeTestBaseSetup"/>
-          <include name="newAccountTest"/>
+          <include name="deleteAccoutn"/>
         </methods>
       </class> <!-- w2c.marketData.Tests.AccountsTest -->
     </classes>

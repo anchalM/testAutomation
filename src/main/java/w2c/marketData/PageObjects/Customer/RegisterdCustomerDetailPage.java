@@ -20,7 +20,7 @@ public class RegisterdCustomerDetailPage extends BasePageObject {
 	}
 
 	public String getRegAccountID() {
-		return getValueWhenReady(AccountID, 3000);
+		return getValueWhenReady(AccountID, 5000);
 		}
 	/*
 	 * public String getAccountNumber(){ return

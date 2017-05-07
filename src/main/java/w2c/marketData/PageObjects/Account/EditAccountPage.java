@@ -3,8 +3,10 @@ package w2c.marketData.PageObjects.Account;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class EditAccountPage {
-	WebDriver driver;
+import w2c.marketData.Common.BasePageObject;
+
+public class EditAccountPage extends BasePageObject{
+	
 	By Accountno = By.name("accountno");
 //	By CustomerID = By.name("cusid");
 //	By AccountType = By.name("selaccount");
@@ -14,12 +16,11 @@ public class EditAccountPage {
 	public EditAccountPage(WebDriver driver){
 		this.driver= driver;
 	}
-	public void accountNo(String accountno){
-		driver.findElement(Accountno).sendKeys(accountno);
-	}
-	public void clickSubmit(){
-		driver.findElement(Submit).click();
-	}
-
+	public void setAccountNo(String accountID){
+		assignValueWhenReady(Accountno, accountID, 3000);
+		}
 	
+	public void clickSubmit(){
+		clickWhenReady(Submit,3000);
+	}
 }

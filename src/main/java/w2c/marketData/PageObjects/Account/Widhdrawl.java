@@ -1,36 +1,39 @@
 package w2c.marketData.PageObjects.Account;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.By; 
 import org.openqa.selenium.WebDriver;
+import w2c.marketData.Common.BasePageObject;
 
-import w2c.marketData.PageObjects.Customer.RegisterdCustomerDetailPage;
 
-public class Widhdrawl {
-	WebDriver driver;
+public class Widhdrawl extends BasePageObject {
 	By Accountno = By.name("accountno");
 	By Ammount = By.name("ammount");
 	By Description = By.name("desc");
-	By Submit = By.name("AccSubmit"); 
-	By Reset= By.name("res");
-	
+	By Submit = By.name("AccSubmit");
+	By Reset = By.name("res");
+
 	public Widhdrawl(WebDriver driver) {
-		this.driver=driver;
-		}
-	public void accountno(String accountno){
-		driver.findElement(Accountno).sendKeys(accountno);
+		this.driver = driver;
 	}
-	public void ammount(String ammount){
-		driver.findElement(Ammount).sendKeys(ammount);
+
+	public void accountno(String accountno) {
+		assignValueWhenReady(Accountno, accountno, 3000);
 	}
-	public void description(String desc){
-		driver.findElement(Description).sendKeys(desc);
+
+	public void ammount(String ammount) {
+		assignValueWhenReady(Ammount, ammount, 3000);
 	}
-	/*public RegisterdCustomerDetailPage submit(){
-		driver.findElement(Submit).click();
-		RegisterdCustomerDetailPage regPage = new RegisterdCustomerDetailPage(driver);
-		return regPage;*/
-	
-	public void submit(){
-		driver.findElement(Submit).click();
+
+	public void description(String desc) {
+		assignValueWhenReady(Description, desc, 3000);
+	}
+	/*
+	 * public RegisterdCustomerDetailPage submit(){
+	 * driver.findElement(Submit).click(); RegisterdCustomerDetailPage regPage =
+	 * new RegisterdCustomerDetailPage(driver); return regPage;
+	 */
+
+	public void submit() {
+		clickWhenReady(Submit, 3000);
 	}
 }
